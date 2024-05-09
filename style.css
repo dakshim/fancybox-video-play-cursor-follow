@@ -1,0 +1,152 @@
+:root {
+	--brown: #24221b;
+	--cream: #e4dcc9;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	margin: 1em;
+	align-items: center;
+	background-color: var(--cream);
+
+	/* optional */
+	gap: 1em;
+	font-family: "IBM Plex Mono";
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	user-select: none;
+}
+
+/* MAIN STYLES FOR PLAY BUTTON */
+#video-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 394px;
+	width: 700px;
+	position: relative;
+	cursor: none;
+	max-width: 100%;
+}
+
+#play-button {
+	position: absolute;
+	border-radius: 100px;
+	width: 120px;
+	height: 120px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #f4ece2;
+	opacity: 1;
+	cursor: none;
+}
+
+#video {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.play-icon {
+	font-size: 20px;
+	color: var(--brown);
+}
+
+/* END OF MAIN STYLES FOR PLAY BUTTON */
+
+/* Optional */
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+::placeholder {
+	color: var(--brown);
+	opacity: 30%;
+}
+
+::selection {
+	background-color: var(--brown);
+	color: var(--cream);
+}
+
+.info {
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+	width: 700px;
+	height: 50px;
+	max-width: 100%;
+}
+
+.button {
+	border: 3px solid var(--brown);
+	background-color: var(--brown);
+	color: var(--cream);
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	width: 30%;
+	justify-content: center;
+
+	font-family: "IBM Plex Mono";
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: var(--cream);
+	color: var(--brown);
+}
+
+.button > p {
+	margin: 0;
+}
+
+.one {
+	width: 70%;
+	padding: 0 20px;
+	border: 3px solid var(--brown);
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	background-color: var(--cream);
+
+	font-family: "IBM Plex Mono";
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.description {
+	height: fit-content;
+	box-sizing: border-box;
+	padding: 20px 20px;
+	border: 3px solid var(--brown);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--cream);
+	font-size: 16px;
+}
+
+.description > * {
+	margin: 0;
+}
+
+.link {
+	border-bottom: 2px solid var(--brown);
+}
+
+.link:hover {
+	background-color: var(--brown);
+	color: var(--cream);
+}
